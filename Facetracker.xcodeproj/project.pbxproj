@@ -1,0 +1,282 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0D357F6B15BCE2D600453226 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D357F6A15BCE2D600453226 /* UIKit.framework */; };
+		0D357F6D15BCE2D600453226 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D357F6C15BCE2D600453226 /* Foundation.framework */; };
+		0D357F6F15BCE2D600453226 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D357F6E15BCE2D600453226 /* CoreGraphics.framework */; };
+		0D357F7515BCE2D600453226 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0D357F7315BCE2D600453226 /* InfoPlist.strings */; };
+		0D357F7715BCE2D600453226 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D357F7615BCE2D600453226 /* main.m */; };
+		0D357F7B15BCE2D600453226 /* opencvAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D357F7A15BCE2D600453226 /* opencvAppDelegate.m */; };
+		0D357F7E15BCE2D600453226 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D357F7C15BCE2D600453226 /* MainStoryboard.storyboard */; };
+		0D357F8115BCE2D600453226 /* opencvViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D357F8015BCE2D600453226 /* opencvViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0D357F6615BCE2D600453226 /* Facetracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Facetracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D357F6A15BCE2D600453226 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0D357F6C15BCE2D600453226 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0D357F6E15BCE2D600453226 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0D357F7215BCE2D600453226 /* Facetracker-Info.plist */ = {isa = PBXFileReference; path = "Facetracker-Info.plist"; sourceTree = "<group>"; };
+		0D357F7415BCE2D600453226 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0D357F7615BCE2D600453226 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0D357F7815BCE2D600453226 /* Facetracker-Prefix.pch */ = {isa = PBXFileReference; path = "Facetracker-Prefix.pch"; sourceTree = "<group>"; };
+		0D357F7915BCE2D600453226 /* opencvAppDelegate.h */ = {isa = PBXFileReference; path = opencvAppDelegate.h; sourceTree = "<group>"; };
+		0D357F7A15BCE2D600453226 /* opencvAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = opencvAppDelegate.m; sourceTree = "<group>"; };
+		0D357F7D15BCE2D600453226 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		0D357F7F15BCE2D600453226 /* opencvViewController.h */ = {isa = PBXFileReference; path = opencvViewController.h; sourceTree = "<group>"; };
+		0D357F8015BCE2D600453226 /* opencvViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = opencvViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0D357F6315BCE2D600453226 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D357F6B15BCE2D600453226 /* UIKit.framework in Frameworks */,
+				0D357F6D15BCE2D600453226 /* Foundation.framework in Frameworks */,
+				0D357F6F15BCE2D600453226 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0D357F5B15BCE2D500453226 = {
+			isa = PBXGroup;
+			children = (
+				0D357F7015BCE2D600453226 /* Facetracker */,
+				0D357F6915BCE2D600453226 /* Frameworks */,
+				0D357F6715BCE2D600453226 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0D357F6715BCE2D600453226 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0D357F6615BCE2D600453226 /* Facetracker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0D357F6915BCE2D600453226 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0D357F6A15BCE2D600453226 /* UIKit.framework */,
+				0D357F6C15BCE2D600453226 /* Foundation.framework */,
+				0D357F6E15BCE2D600453226 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0D357F7015BCE2D600453226 /* Facetracker */ = {
+			isa = PBXGroup;
+			children = (
+				0D357F7915BCE2D600453226 /* opencvAppDelegate.h */,
+				0D357F7A15BCE2D600453226 /* opencvAppDelegate.m */,
+				0D357F7C15BCE2D600453226 /* MainStoryboard.storyboard */,
+				0D357F7F15BCE2D600453226 /* opencvViewController.h */,
+				0D357F8015BCE2D600453226 /* opencvViewController.m */,
+				0D357F7115BCE2D600453226 /* Supporting Files */,
+			);
+			path = Facetracker;
+			sourceTree = "<group>";
+		};
+		0D357F7115BCE2D600453226 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0D357F7215BCE2D600453226 /* Facetracker-Info.plist */,
+				0D357F7315BCE2D600453226 /* InfoPlist.strings */,
+				0D357F7615BCE2D600453226 /* main.m */,
+				0D357F7815BCE2D600453226 /* Facetracker-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0D357F6515BCE2D600453226 /* Facetracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D357F8415BCE2D600453226 /* Build configuration list for PBXNativeTarget "Facetracker" */;
+			buildPhases = (
+				0D357F6215BCE2D600453226 /* Sources */,
+				0D357F6315BCE2D600453226 /* Frameworks */,
+				0D357F6415BCE2D600453226 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Facetracker;
+			productName = Facetracker;
+			productReference = 0D357F6615BCE2D600453226 /* Facetracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0D357F5D15BCE2D500453226 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = opencv;
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 0D357F6015BCE2D500453226 /* Build configuration list for PBXProject "Facetracker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0D357F5B15BCE2D500453226;
+			productRefGroup = 0D357F6715BCE2D600453226 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0D357F6515BCE2D600453226 /* Facetracker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0D357F6415BCE2D600453226 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D357F7515BCE2D600453226 /* InfoPlist.strings in Resources */,
+				0D357F7E15BCE2D600453226 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0D357F6215BCE2D600453226 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D357F7715BCE2D600453226 /* main.m in Sources */,
+				0D357F7B15BCE2D600453226 /* opencvAppDelegate.m in Sources */,
+				0D357F8115BCE2D600453226 /* opencvViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0D357F7315BCE2D600453226 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0D357F7415BCE2D600453226 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0D357F7C15BCE2D600453226 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0D357F7D15BCE2D600453226 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0D357F8215BCE2D600453226 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0D357F8315BCE2D600453226 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0D357F8515BCE2D600453226 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Facetracker/Facetracker-Prefix.pch";
+				INFOPLIST_FILE = "Facetracker/Facetracker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0D357F8615BCE2D600453226 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Facetracker/Facetracker-Prefix.pch";
+				INFOPLIST_FILE = "Facetracker/Facetracker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0D357F6015BCE2D500453226 /* Build configuration list for PBXProject "Facetracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D357F8215BCE2D600453226 /* Debug */,
+				0D357F8315BCE2D600453226 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0D357F8415BCE2D600453226 /* Build configuration list for PBXNativeTarget "Facetracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D357F8515BCE2D600453226 /* Debug */,
+				0D357F8615BCE2D600453226 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0D357F5D15BCE2D500453226 /* Project object */;
+}
