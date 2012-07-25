@@ -7,7 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
 
-@interface opencvViewController : UIViewController
+@interface opencvViewController : UIViewController <AVCaptureVideoDataOutputSampleBufferDelegate>
+{
+}
+
+@property (nonatomic, retain) AVCaptureSession *captureSession;
+@property (nonatomic, retain) IBOutlet UIImageView *imageView;
+@property (nonatomic, retain) IBOutlet UIView *uiView;
+
+
+- (void)initalizeVideoCapture;
 
 @end

@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+
 @interface opencvAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;

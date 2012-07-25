@@ -8,6 +8,7 @@
 
 #import "opencvAppDelegate.h"
 
+
 @implementation opencvAppDelegate
 
 @synthesize window = _window;
