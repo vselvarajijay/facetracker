@@ -8,11 +8,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Facetracker/opencvViewController.mm"
-         timestampString = "364874422.294629"
+         timestampString = "364875790.049782"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "187"
-         endingLineNumber = "187"
+         startingLineNumber = "229"
+         endingLineNumber = "229"
          landmarkName = "-faceDetector:"
          landmarkType = "5">
       </FileBreakpoint>

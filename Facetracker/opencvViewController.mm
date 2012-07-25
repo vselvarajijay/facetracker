@@ -165,7 +165,8 @@ UILabel *myLabel;
     
     UIImage *image = [UIImage imageWithCGImage:quartzImage];
     
-    [self faceDetector:image];
+//    [self faceDetector:image];
+    [self testface:image];
     
     CGImageRelease(quartzImage);
     
@@ -173,12 +174,52 @@ UILabel *myLabel;
 }
 
 
+
+
+-(void) testface:(UIImage *)img {
+    CIImage *ciImage = [[CIImage alloc] initWithImage:img];
+    
+    NSLog(@"showing image now");
+    //[imageView setImage:image];
+    
+    
+    if (ciImage == nil)
+        NSLog(@"CIImage is nill ass hole !!");
+    
+    
+    
+    NSDictionary *options = [[NSDictionary alloc] initWithObjectsAndKeys:
+                             @"CIDetectorAccuracy", @"CIDetectorAccuracyLow",nil];
+    
+    CIDetector *ciDetector = [CIDetector detectorOfType:CIDetectorTypeFace 
+                                                context:nil
+                                                options:options];
+    NSArray *features = [ciDetector featuresInImage:ciImage];
+    NSLog(@"no of face detected: %d", [features count]);
+    
+    
+    for(CIFaceFeature* faceFeature in features)
+    {
+        UIView* faceView = [[UIView alloc] initWithFrame:faceFeature.bounds];
+        
+        // add a border around the newly created UIView
+        faceView.layer.borderWidth = 1;
+        faceView.layer.borderColor = [[UIColor redColor] CGColor];
+        
+        // add the new view to create a box around the face
+        [_uiView addSubview:faceView];
+
+    }
+    
+
+}
 -(void)faceDetector:(UIImage *)img
 {
+
     CIDetector* detector = [CIDetector detectorOfType:CIDetectorTypeFace
-                                              context:nil options:[NSDictionary dictionaryWithObject:CIDetectorAccuracyLow forKey:CIDetectorAccuracy]];
+                                              context:nil options:[NSDictionary dictionaryWithObject:CIDetectorAccuracyHigh forKey:CIDetectorAccuracy]];
 
-
+    
 
     NSArray* features = [detector featuresInImage:img.CIImage];
 
